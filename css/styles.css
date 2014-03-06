@@ -1,0 +1,108 @@
+#holder{
+	/* The unordered list that is to be split into pages */
+	overflow:hidden;
+	background-color: #4e5355;
+	padding-bottom:10px;
+}
+
+.swControls{
+	position:absolute;
+	margin-top:10px;
+}
+
+a.swShowPage{
+
+	/* The links that initiate the page slide */
+
+	background-color:#444444;
+	float:left;
+	height:15px;
+	margin:4px 3px;
+	text-indent:-9999px;
+	width:15px;
+	/*border:1px solid #ccc;*/
+	
+	/* CSS3 rounded corners */
+	
+	border-radius : 7px; 
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+	background-color:#2993dd;
+	
+	/*	CSS3 inner shadow */
+
+	/*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+	box-shadow:0 0 7px #1e435d inset;
+}
+
+a:hover {
+	text-decoration:none;
+	outline:none;
+}
+
+#holder li{
+	background-color:#F4F4F4;
+	list-style:none outside none;
+	margin:10px 10px 0;
+	padding:20px;
+	float:left;
+
+	/* Regular CSS3 box shadows (not inset): */
+
+	box-shadow:0 0 6px #111111;
+}
+
+#holder,
+#holder li{
+	/* Applying rouded corners to both the holder and the holder lis */
+	
+	border-radius:8px;
+}
+
+
+/*  register button */
+.a-btn{
+    background:#fecc5f;
+    border:1px solid #f5b74e;
+    box-shadow:0 1px 1px #d3d3d3, inset 0 1px 0 #fee395;
+    padding:0px 90px 0px 10px;
+    height:40px;
+    position:relative;
+    border-radius:4px;
+    float:left;
+}
+.a-btn-text{ 
+	padding-top : 5px;
+	display : block;
+	font-size : 18px;
+	white-space : nowrap;
+	color : #996633;
+	text-shadow : 0 1px 0 #fedd9b;
+	transition : all 0.3s linear;
+}
+
+.a-btn-icon-right{   
+	position : absolute;
+	right : 0;
+	top : 0;
+	height : 100%;
+	width : 52px;
+	border-left : 1px solid #f5b74e;
+	box-shadow : 1px 0 1px rgba(255, 255, 255, 0.4) inset;
+}
+.a-btn-icon-right span{
+	width : 38px;
+	height : 38px;
+	opacity : 0.699999988079071044921875;
+	position : absolute;
+	left : 50%;
+	top : 50%;
+	margin : -20px 0 0 -20px;
+	background : url(../images/arrow_right.png) 50% 55% no-repeat transparent;
+	transition : all 0.3s linear;
+}
+
+
+
